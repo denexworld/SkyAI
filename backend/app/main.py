@@ -1,12 +1,10 @@
-"""
-SkyAI Backend
-Version 1.0
-"""
-
+from backend.app.core.config import APP_NAME, VERSION
 def start():
-    print("🚀 SkyAI Backend Started")
-    print("Version: 1.0.0")
-    print("Status: Development Mode")
+    print("=" * 40)
+    print(f"{APP_NAME}")
+    print(f"Version: {VERSION}")
+    print("Status: Development")
+    print("=" * 40)
 
 if __name__ == "__main__":
     start()
