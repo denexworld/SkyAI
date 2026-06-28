@@ -1,9 +1,14 @@
-from backend.app.core.config import APP_NAME, VERSION
+"""
+SkyAI Backend Entry Point
+"""
+
+from backend.app.core.settings import settings
+
 def start():
     print("=" * 40)
-    print(f"{APP_NAME}")
-    print(f"Version: {VERSION}")
-    print("Status: Development")
+    print(f"🚀 {settings.APP_NAME}")
+    print(f"Version : {settings.VERSION}")
+    print("Backend  : Ready")
     print("=" * 40)
 
 if __name__ == "__main__":
